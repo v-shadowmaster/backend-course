@@ -1,0 +1,17 @@
+routing = intention + direction / path 
+
+example : get("http:localhost:3000/api/me");
+
+static routes 
+
+    same data 
+
+dynamic data 
+    dynamic request like api/123 and api/234
+
+query params
+
+    request api/query=some+value
+
+nested routes
+    request api/users/123/posts/456  api/users/234/posts/234

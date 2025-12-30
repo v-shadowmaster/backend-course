@@ -39,5 +39,57 @@
     content-type : application/json
     content-lenght : 123
     connection : keep-alive
-    server : apo
+    server : server name here
 
+    // add all the response headers here 
+
+    representation headers 
+    content-type 
+    content-lenght
+    content-encoding
+    etag
+
+    security headers 
+    strict-transport-security (hsts)  -> ensures client communicates over https only
+    content-security-polity -> 
+    x-frame-options - scripts embedded in ifreame
+    x-content-type-options - mime types
+    set-cookie - secures cookies
+
+
+ // some custom headers
+
+    hTTP methods
+ -> intent of the interaction 
+
+    get -> get data and donot modify data
+    post -> send data to the server
+    patch -> update the data
+    put -> update data but data compleley replace the previous data
+    delete -> resouce data from the server
+
+
+    idempotenet vs non-idempotenet
+    
+    idempotenet -> call as many times as possible and still get the same results like get put and delete
+    non-idempotent -> // write the destials
+
+    options methods
+    cors - same origin policy
+
+    fetch the capability of the server 
+
+
+    preflighted request
+    1) 
+
+ // write code for the same in the express and nodejs for both the option methods and prelifht request
+
+
+  caching
+
+   // content negotiation add some data here
+
+   
+
+  
