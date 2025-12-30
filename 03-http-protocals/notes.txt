@@ -1,0 +1,43 @@
+1) stateless
+
+2) client - server
+    http assumes that client always makes the request 
+    https is just a more secured version of http built on top of http
+    to send req or res from client or server some sort of connection is needed 
+    http uses tcp / udp , tcp -> more reliable 
+
+    refer osi model here and application layer in particular
+
+
+    some complex request message 
+
+    PUT /api/users/123 HTTP/1.1
+    host : example.com
+    user-agent : chrome
+    content-type : application/json
+    content-length : 123
+    authorization : bearer asdf.asdfad;fksadf;lk.asdflasdjfl
+    accept : application/json
+    accept-encoding : gzip , deflate , bearer
+    connection : keep-alive
+    referer : https://example.com/dashboard
+    cookie:sessionId=asdf234asdw34;
+    lang=en-user
+
+    {
+        "firstName" : "John",
+        "lastName" : "Doe",
+        "email" : "john.doe@example.com",
+        "age":30
+    }
+
+
+    some complex response message
+
+    HTTP/1.1 200 OK
+    Date : 
+    content-type : application/json
+    content-lenght : 123
+    connection : keep-alive
+    server : apo
+
